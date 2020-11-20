@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar Cipher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" 
+      type="image/png" 
+      href="http://example.com/myicon.png">
+</head>
+
+
+<body>
+  <header class="topNav">
+    <href="index.html"> <img href="index.html" id="logo" src="./source/logo.png" width="200px"/>
+    <nav>
+      <ul>
+        <a href= "index.html"> <img href= "index.html" id="home" src="./source/home.png" width="15px">
+          <li>Home</li>
+        </a>
+        <a href= "https://curiouscat.qa/julianskix"> <img href= "feedback.html" id="feedback" src="./source/feedback.png" width="15px">
+          <li>Feedback</li>
+        </a>
+        <a href= "https://www.instagram.com/thehashslingingslash3r_/"> <img href= "https://www.instagram.com/thehashslingingslash3r_/" id="like" src="./source/like.png" width="15px">
+        <li>Drop a like</li>
+          </a>
+      </ul>
+    </nav>
+  </header>
+  <br>
+  <br>
+  <br>
+
+  <script language="JavaScript">
+    function caesarCipher(){
+      var f = document.getElementById("key").value;
+      var x = document.getElementById("mssgBox").value;
+      var key1 = Number(f)
+
+      var result='';
+        for (var i = 0, len = x.length; i < len; i++) {
+          if (x[i] == x[i].toUpperCase()){
+            var a = x[i].charCodeAt(0);
+            var e = (((a - 65 + key1) % 26) + 97);
+          result = result + String.fromCharCode(e).toUpperCase();
+          }
+          else if (x[i] == x[i].toLowerCase()){
+            var a = x[i].charCodeAt(0);
+            var e = (((a - 97 + key1) % 26) + 97);
+          result = result + String.fromCharCode(e);
+          } else {
+          result = result + x[i];
+        }
+      }
+    document.getElementById('result').value = result ;
+    }
+  </script>
+
+    <div id="xxx" align="center">
+      <label id="labels">Message</label><br>
+      <textarea id = "messgBox" rows = "6" cols = "80"></textarea>
+    </div class="input"> 
+  
+    <div id="ky" align="center" class="user">
+      <br>
+        <label id="labels">Key🔑--</label><br>
+        <input type = "number" id = "key" value = "text here" />
+      <br>
+      <br>
+        <button onclick="caesarCipher()">Encrypt</button>
+    </div>
+      <br>
+    <div id="rsult" align="center" class="result">
+        <textarea id = "result" rows = "6" cols = "80"></textarea>
+    </div>
+    <h4 align="center">Features aren't perfect. And still going to be updated as soon as possible</h4>
+  <br> 
+</body>
+
+
+
+</html>

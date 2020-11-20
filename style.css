@@ -1,0 +1,93 @@
+body {
+  background-image: url("sample-pattern.png");
+  background-color: #cccccc;
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#index {
+text-align: center;
+font-family: 'Roboto Mono', monospace;
+
+}
+article{
+  border:solid 1px #f1f1f1;
+  margin: auto;
+  width: 1000px;
+  background-color: white;
+  box-shadow: 5px 5px 4px grey;
+}
+h1,footer{
+  text-align: center;
+}
+h3{
+  color:blue;
+  padding-bottom: 10px;
+  margin: 30px;
+}
+p{
+  margin: 30px ;
+  font-size: medium;
+  font-family: 'Roboto Mono', monospace;
+}
+li{
+  display: inline;
+  text-align: right;
+  padding: 15px;
+  margin: auto;
+}
+a{
+  text-decoration: none;
+}
+img{
+  display: inline;
+  padding: 0px;
+}
+nav{
+  left: 0;
+  float: right;
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+#article-list {
+  border: black;
+}
+.text-center{
+  text-align: center;
+}
+.topNav{
+  font-size: 15px;
+  background-color:#cccccc;
+  color:#cccccc;
+  width: relative;
+  font-family: 'Roboto Mono', monospace;  
+  position: sticky;
+
+  top: 0%;
+  padding: relative; 
+}
+.content{
+  border:solid 1px #f1f1f1;
+  margin: auto;
+  width: 1000px;
+  background-color: white;
+  box-shadow: 5px 5px 4px grey;
+}
+#form {
+  text-align: center;
+}
+#result {
+  display: flex;
+  align-items: center;
+}
+#myTextArea{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+#labels{
+  font-family: 'Roboto Mono', monospace; 
+}
